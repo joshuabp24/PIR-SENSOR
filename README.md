@@ -27,43 +27,43 @@ https://wokwi.com/projects/349002300756329042
 
 
 <h2>CODIGO</h2>
-Joshua Benitez Peraza
+    Joshua Benitez Peraza
+    
+    El codigo siguiente permite hacer uso del sensor PIR, 
 
-El codigo siguiente permite hacer uso del sensor PIR, 
+    el cual encendera el led al recibir una señal.
 
-el cual encendera el led al recibir una señal.
+    import board
 
-import board
-
-import digitalio
+    import digitalio
 
 
 
-LED_PIN = board.GP28   
+    LED_PIN = board.GP28   
 
-Pin number for the board's built in LED.
+    Pin number for the board's built in LED.
 
-PIR_PIN = board.GP16  
+    PIR_PIN = board.GP16  
 
-Pin number connected to PIR sensor output wire.
+    Pin number connected to PIR sensor output wire.
 
-Setup digital input for PIR sensor:
+    Setup digital input for PIR sensor:
 
-pir = digitalio.DigitalInOut(PIR_PIN)
+    pir = digitalio.DigitalInOut(PIR_PIN)
 
-pir.direction = digitalio.Direction.INPUT
+    pir.direction = digitalio.Direction.INPUT
 
-Setup digital output for LED:
+    Setup digital output for LED:
 
-led = digitalio.DigitalInOut(LED_PIN)
+    led = digitalio.DigitalInOut(LED_PIN)
 
-led.direction = digitalio.Direction.OUTPUT
+    led.direction = digitalio.Direction.OUTPUT
 
-Main loop that will run forever:
+    Main loop that will run forever:
 
-old_value = pir.value
+    old_value = pir.value
 
-while True:
+    while True:
 
     pir_value = pir.value
     
