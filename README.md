@@ -27,74 +27,41 @@ https://wokwi.com/projects/349002300756329042
 
 
 <h2>CODIGO</h2>
-    Joshua Benitez Peraza
-    
-    El codigo siguiente permite hacer uso del sensor PIR, 
+<P1>
+### Joshua Benitez Peraza
+### El codigo siguiente permite hacer uso del sensor PIR, el cual encendera el led al recibir una señal.
 
-    el cual encendera el led al recibir una señal.
+import board
+import digitalio
 
-    import board
+LED_PIN = board.GP28  # Pin number for the board's built in LED.
+PIR_PIN = board.GP16   # Pin number connected to PIR sensor output wire.
 
-    import digitalio
+# Setup digital input for PIR sensor:
+pir = digitalio.DigitalInOut(PIR_PIN)
+pir.direction = digitalio.Direction.INPUT
 
+# Setup digital output for LED:
+led = digitalio.DigitalInOut(LED_PIN)
+led.direction = digitalio.Direction.OUTPUT
 
-
-    LED_PIN = board.GP28   
-
-    Pin number for the board's built in LED.
-
-    PIR_PIN = board.GP16  
-
-    Pin number connected to PIR sensor output wire.
-
-    Setup digital input for PIR sensor:
-
-    pir = digitalio.DigitalInOut(PIR_PIN)
-
-    pir.direction = digitalio.Direction.INPUT
-
-    Setup digital output for LED:
-
-    led = digitalio.DigitalInOut(LED_PIN)
-
-    led.direction = digitalio.Direction.OUTPUT
-
-    Main loop that will run forever:
-
-    old_value = pir.value
-
-    while True:
-
+# Main loop that will run forever:
+old_value = pir.value
+while True:
     pir_value = pir.value
-    
     if pir_value:
-    
-    
-                                                                PIR is detecting movement! Turn on LED.
-                                                                
+        # PIR is detecting movement! Turn on LED.
         led.value = True
-        
-                                                                Check if this is the first time movement was
-                                                                
-                                                                detected and print a message!
-                                                                
+        # Check if this is the first time movement was
+        # detected and print a message!
         if not old_value:
-        
             print('Motion detected!')
-            
     else:
-    
-                                                                PIR is not detecting movement. Turn off LED.
-                                                                
+        # PIR is not detecting movement. Turn off LED.
         led.value = False
-        
-                                                                Again check if this is the first time movement
-                                                                
-                                                                stopped and print a message.
-                                                                
+        # Again check if this is the first time movement
+        # stopped and print a message.
         if old_value:
-        
             print('Motion ended!')
-            
     old_value = pir_value
-    
+</P1>
