@@ -1,5 +1,5 @@
 <img src="text.png" alt="Motion" width="850" height="150"> 
-
+## Por: Joshua Benitez Peraza
 ### PIR Motion Sensor
 <p1>
 Los sensores PIR permiten detectar movimiento, casi siempre se usan para detectar si un alguien se ha movido dentro o fuera del alcance de los sensores. Son pequeños, económicos, de bajo consumo, fáciles de usar y no se desgastan. Por esa razón, se encuentran comúnmente en electrodomésticos y aparatos que se usan en los hogares o negocios. A menudo se los conoce como sensores PIR, "infrarrojos pasivos", "piroeléctricos" o "de movimiento IR".
@@ -19,4 +19,4 @@ Los PIR están hechos básicamente de un  sensor piroeléctrico, que puede detec
 |  Supply Voltage Range  | 2V TO 15 V  |
 | Storage Temperature Range  | -40 C to 85 C  |
 
-<h2> LINK DEL WORKI </h2>
+# LINK DEL WORKI
