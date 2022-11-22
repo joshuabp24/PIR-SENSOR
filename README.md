@@ -30,6 +30,7 @@ https://wokwi.com/projects/349002300756329042
 
     ### Joshua Benitez Peraza
     ### El codigo siguiente permite hacer uso del sensor PIR, el cual encendera el led al recibir una señal.
+    
     import board
     import digitalio
 
