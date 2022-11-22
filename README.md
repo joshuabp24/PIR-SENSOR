@@ -1,6 +1,6 @@
 <img src="text.png" alt="Motion" width="850" height="150"> 
-## Por: Joshua Benitez Peraza
-### PIR Motion Sensor
+<h2>Por: Joshua Benitez Peraza</h2>
+<h1>PIR Motion Sensor</h1>
 <p1>
 Los sensores PIR permiten detectar movimiento, casi siempre se usan para detectar si un alguien se ha movido dentro o fuera del alcance de los sensores. Son pequeños, económicos, de bajo consumo, fáciles de usar y no se desgastan. Por esa razón, se encuentran comúnmente en electrodomésticos y aparatos que se usan en los hogares o negocios. A menudo se los conoce como sensores PIR, "infrarrojos pasivos", "piroeléctricos" o "de movimiento IR".
 
